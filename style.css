@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    z-index:10;
+    justify-content: space-between;
+    margin-bottom: -5px;
+    
+}
+
+.nav a {
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+
+.nav a:hover {
+    background-color: #444;
+    filter: drop-shadow(1px 1px 10px yellow);
+}
+.container{
+    width: 95vw;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #172433;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+    position: relative;
+}
+.circle{
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 50%;
+    margin-top: -15vh;
+    border: none;
+
+}
+.nav .first, .nav .second {
+    display: flex;
+    gap: 20px;
+}
+.first {
+    display: flex;
+    gap: 20px;
+}
+
+.second {
+    display: flex;
+    gap: 20px;
+}
+.txt {
+    height: 50%;
+    width: 30%;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center children vertically */
+    align-items: flex-start;
+    position: absolute;
+    top: 50%;
+    left: 30lvh;
+    transform: translateY(-50%); /* Center the box vertically */
+}
+.line, .name, .info {
+    margin-bottom: 20px; /* Add some space between the lines */
+}
+.line{
+    font-size: 35px;
+    color: beige;
+}
+.name{
+    font-size: 25px;
+    color: #e6c931;
+}
+.info{
+    font-size: 20px;
+    color: beige;
+}
+.section{
+    height: 50%;
+    width: 30%;
+    
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center children vertically */
+    align-items: center;
+    position: absolute;
+    top: 25%;  
+    transform: translateX(85%);
+}
+.click{
+    display: inline-block;
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Center the text */
+    line-height: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+.click:hover{
+    background-color: #e6c931;
+    transform: scaleX(1.05);
+}
+
+.Download {
+    display: inline-block;
+    height: 50px; /* Match the height of the click button */
+    width: 350px; /* Match the width of the click button */
+    border: none; /* Match the border of the click button */
+    border-radius: 25px; 
+    font-size: 16px;
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Center the text */
+    line-height: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+
+.Download:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.about-me {
+    width: 30%; /* Set the width to 30% of the web page */
+    height: 70%;
+    max-width: 1000px;
+    margin: 20px 0; /* Adjust the margin to remove auto centering */
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #172433;
+    border-radius: 10px;
+    position: absolute; /* Position the about-me box absolutely */
+    left: 30px; /* Align it to the left side */
+   
+    justify-content: center;
+}
+
+.about-me h2 {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+}
+
+.about-me p {
+    margin-top: 8%;
+    margin-bottom: 50px;
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+    
+}
