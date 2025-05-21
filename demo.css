@@ -1,90 +1,265 @@
-body {
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f3e5e5;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 0;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 5px; /* Position the navbar 5px above the container */
+}
+
+.nav .first, .nav .second {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.nav a:hover {
+    background-color: #444;
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
-}
-
-.navbar {
-    background-color: #1a1a2e;
-    padding: 10px 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    width: 95vw;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #172433;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+
+.circle {
+    width: 20%;
+    padding-bottom: 20%;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: 1; /* Ensure the circle has a lower z-index than the navbar */
+}
+
+.txt {
+    height: 50%;
+    width: 20%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    justify-content: center; /* Center children vertically */
+    align-items: flex-start; /* Align children to the start (left) */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%); /* Center the box vertically */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+.line, .name, .info {
+    margin-bottom: 10px; /* Add some space between the lines */
+}
+
+.first {
+    display: flex;
+    gap: 20px;
+}
+
+.second {
+    display: flex;
+    gap: 20px;
+}
+
+.click {
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Center the text */
+    line-height: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+
+.click:hover {
+    background-color: #e6c931;
+    transform: scaleX(1.05);
+}
+
+.Download {
+    display: inline-block;
+    height: 50px; /* Match the height of the click button */
+    width: 350px; /* Match the width of the click button */
+    border: none; /* Match the border of the click button */
+    border-radius: 25px; /* Match the border-radius of the click button */
+    font-size: 16px;
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Center the text */
+    line-height: 50px; /* Center the text vertically */
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+}
+
+.Download:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.about-me {
+    width: 30%; /* Set the width to 30% of the web page */
+    height: 70%; /* Set the height to 70% */
+    max-width: 1000px;
+    margin: 20px 0; /* Adjust the margin to remove auto centering */
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #172433;
+    border-radius: 10px;
+    position: absolute; /* Position the about-me box absolutely */
+    left: 30px; /* Align it to the left side */
     justify-content: center;
 }
 
-.navbar ul li {
-    margin: 0 15px;
+.about-me h2 {
+    margin-top: 10%;
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+    text-align: center;
 }
 
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
+.about-me p {
+    margin-top: 8%;
+    margin-bottom: 50px;
     font-size: 18px;
+    color: #666;
+    line-height: 1.5;
 }
 
-.profile-section {
-    background-color: #0f3460;
-    color: white;
-    padding: 40px;
+.skills {
+    width: 70%; /* Set the width to 70% of the web page */
+    height: 70%; /* Set the height to 70% */
+    max-width: 1000px;
+    margin: 20px 0; /* Adjust the margin to remove auto centering */
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #172433;
     border-radius: 10px;
+    position: absolute; /* Position the skills box absolutely */
+    right: 30px; /* Align it to the right side */
+    justify-content: center;
+}
+
+.skills h2 {
+    margin-top: 4%;
+    margin-bottom: 10px;
+    font-size: 80px;
+    color: #333;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.left, .right {
+    width: 40%;
+    height: 90%;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px; /* Add space between elements */
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+progress {
+    width: 100%;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the border radius is applied */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+.certifications {
     display: inline-block;
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
     margin-top: 20px;
 }
 
-.profile-image {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 auto 20px;
-}
-
-.profile-text h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-.profile-text .name {
-    color: #f4d03f;
-    font-style: italic;
-}
-
-.profile-text p {
-    font-size: 16px;
-    margin: 10px 0 20px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-
-.talk-button, .cv-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.talk-button {
-    background-color: #e0e0e0;
-    color: #000;
-}
-
-.cv-button {
-    background-color: #1a1a2e;
-    color: white;
-    border: 2px solid #f4d03f;
+.certifications:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
 }

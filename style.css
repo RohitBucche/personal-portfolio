@@ -184,3 +184,248 @@
     line-height: 1.5;
     
 }
+.skills {
+    width: 60%; /* Set the width to 70% of the web page */
+    height: 70%; /* Set the height to 70% */
+    max-width: 1000px;
+    margin: 20px 0; /* Adjust the margin to remove auto centering */
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #172433;
+    border-radius: 10px;
+    position: absolute; /* Position the skills box absolutely */
+    right: 30px; /* Align it to the right side */
+    justify-content: center;
+}
+
+.skills h2 {
+    margin-top: 4%;
+    margin-bottom: 10px;
+    font-size: 80px;
+    color: #333;
+    text-align: center;
+}
+.skills-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    height: 70%;
+}
+
+.left{
+    width: 40%;
+    height: 90%;
+    padding-left: 5%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px; 
+}
+.right{
+    width: 40%;
+    height: 90%;
+    padding-left: 5%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+progress{
+    width: 90%;
+    height: 35%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+progress::-webkit-progress-bar {
+    background-color: #bebebe;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4caf50;
+    border-radius: 10px;
+}
+
+.certifications {
+    display: inline-block;
+    height: 50px;
+    width: 350px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    background-color: #172433;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 1px 1px 10px rgb(0, 128, 255);
+    margin-top: 20px;
+}
+
+.certifications:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.projects{
+       margin-top: 300px;
+       width: 95vw;
+        height: 80vh;
+        border: 1px solid black;
+        border-radius: 15px;
+        background-color: #172433;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 600px;
+        margin-bottom: 5px;
+        box-shadow: 1px 1px 10px rgb(0, 128, 255);
+        margin-left: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+.projects h2{
+   color: #bebebe;
+   
+}
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card {
+    height: 300px;
+    min-width: 200px;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(238, 238, 238, 0.088);
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 
+    }
+.prev, .next {
+    position: relative;
+    top: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev {
+    left: 50%;
+}
+
+.next {
+    right: -50%;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .circle {
+        width: 40%;
+        padding-bottom: 40%;
+        margin-top: 0;
+    }
+
+    .txt {
+        width: 100%;
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .line {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 22px;
+    }
+
+    .info {
+        font-size: 16px;
+    }
+
+    .section {
+        width: 100%;
+        position: relative;
+        top: 0;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .click, .Download {
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .nav .first, .nav .second {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .line {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .info {
+        font-size: 14px;
+    }
+
+    .click, .Download {
+        width: 130px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+    }
+}

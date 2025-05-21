@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
     <style></style>
@@ -19,7 +20,8 @@
     </div>
     <div class="main">
       <div class="container">
-        <div class="circle"></div>
+        <div class="circle">
+        </div>
         <div class="txt">
             <div class="line">
                 <h1>Hey !! I Am</h1>
@@ -47,6 +49,86 @@
       <p>
         In my free time, I enjoy exploring new technologies, reading about cybersecurity trends, and contributing to open-source projects. I believe in the power of community and collaboration, and I am always eager to connect with like-minded individuals.
       </p>
+    </div> 
+    <div class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+      <div class="left">
+        
+          <div style="display: flex; align-items: center;">
+            <img src="html.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+            <progress class="python" max="100" value="70">70%</progress>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="css-3.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+            <progress class="python" max="100" value="70">70%</progress>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="js.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+            <progress class="python" max="100" value="70">70%</progress>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <img src="react.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+            <progress class="python" max="100" value="70">70%</progress>
+          </div>
+      </div>
+      <div class="right">
+        <div style="display: flex; align-items: center;">
+          <img src="python.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+          <progress class="python" max="100" value="70">70%</progress>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <img src="icons8-c-programming-48.png" alt="label" style="width: 40px; height: 40px; margin-right: 10px;">
+          <progress class="python" max="100" value="70">70%</progress>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <img src="online.png" alt="label" style="width: 35px; height: 35px; margin-right: 10px;">
+          <progress class="python" max="100" value="70">70%</progress>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <img src="operative-system.png" alt="label" style="width: 35px; margin-right: 10px;">
+          <progress class="python" max="100" value="70">70%</progress>
+        </div>
+      </div>
+      <a href="https://www.google.com" target="_blank" class="certifications">Certificate</a>
     </div>
+    </div>  
+     
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="slider">
+        <div class="slider-container">
+          <div class="card">Project 1</div>
+          <div class="card">Project 2</div>
+          <div class="card">Project 3</div>
+          <div class="card">Project 4</div>
+          <div class="card">Project 5</div>
+        </div>
+        <button class="prev" onclick="slide(-1)">&#10094;</button>
+        <button class="next" onclick="slide(1)">&#10095;</button>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="sec">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, consequuntur dolor veniam, possimus nemo enim nihil culpa tempore incidunt laudantium cupiditate vitae necessitatibus quod alias.
+          </p>
+          <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i>
+            </a></li>
+            <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+        <div class="sec">
+          
+        </div>
+      </div>
+
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
